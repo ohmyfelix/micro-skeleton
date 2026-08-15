@@ -36,21 +36,34 @@ https://examples.contributte.org/micro-skeleton/
 
 You will need `PHP 8.4+` and [Composer](https://getcomposer.org/).
 
-Create project using composer.
-
 ```bash
 composer create-project -s dev contributte/micro-skeleton acme
+cd acme
+make project
 ```
 
 ## Startup
 
-The easiest way is to use php built-in web server.
+Start the development server:
 
-```
-php -S 0.0.0.0:8000 -t www
+```bash
+make dev
 ```
 
-Then visit [http://localhost:8000](http://localhost:8000) in your browser.
+Open [http://localhost:8000](http://localhost:8000). The default route renders templates from `app/templates`; paths without a matching template render the bundled 404 page.
+
+## Commands
+
+```bash
+make qa       # coding standard and static analysis
+make cs       # coding standard only
+make csf      # fix coding style
+make clean    # remove temporary files and logs
+```
+
+## Configuration
+
+The skeleton's base configuration is in `config/config.neon`. Development mode is enabled by `make dev` through `NETTE_DEBUG=1` and `NETTE_ENV=dev`.
 
 ## Development
 
