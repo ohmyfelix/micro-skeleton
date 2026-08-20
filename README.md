@@ -1,17 +1,19 @@
-![](https://heatbadger.now.sh/github/readme/contributte/micro-skeleton/)
+# Micro Skeleton
+
+![Micro Skeleton activity](https://heatbadger.now.sh/github/readme/contributte/micro-skeleton/)
 
 <p align=center>
-  <a href="https://github.com/contributte/micro-skeleton/actions"><img src="https://badgen.net/github/checks/contributte/micro-skeleton/master"></a>
-  <a href="https://codecov.io/gh/contributte/micro-skeleton"><img src="https://badgen.net/codecov/c/github/contributte/micro-skeleton"></a>
-  <a href="https://packagist.org/packages/contributte/micro-skeleton"><img src="https://badgen.net/packagist/dm/contributte/micro-skeleton"></a>
-  <a href="https://packagist.org/packages/contributte/micro-skeleton"><img src="https://badgen.net/packagist/v/contributte/micro-skeleton"></a>
+  <a href="https://github.com/contributte/micro-skeleton/actions"><img alt="Build status" src="https://badgen.net/github/checks/contributte/micro-skeleton/master"></a>
+  <a href="https://codecov.io/gh/contributte/micro-skeleton"><img alt="Code coverage" src="https://badgen.net/codecov/c/github/contributte/micro-skeleton"></a>
+  <a href="https://packagist.org/packages/contributte/micro-skeleton"><img alt="Packagist downloads" src="https://badgen.net/packagist/dm/contributte/micro-skeleton"></a>
+  <a href="https://packagist.org/packages/contributte/micro-skeleton"><img alt="Packagist version" src="https://badgen.net/packagist/v/contributte/micro-skeleton"></a>
 </p>
 <p align=center>
-  <a href="https://packagist.org/packages/contributte/micro-skeleton"><img src="https://badgen.net/packagist/php/contributte/micro-skeleton"></a>
-  <a href="https://github.com/contributte/micro-skeleton"><img src="https://badgen.net/github/license/contributte/micro-skeleton"></a>
-  <a href="https://bit.ly/ctteg"><img src="https://badgen.net/badge/support/gitter/cyan"></a>
-  <a href="https://bit.ly/cttfo"><img src="https://badgen.net/badge/support/forum/yellow"></a>
-  <a href="https://contributte.org/partners.html"><img src="https://badgen.net/badge/sponsor/donations/F96854"></a>
+  <a href="https://packagist.org/packages/contributte/micro-skeleton"><img alt="Supported PHP version" src="https://badgen.net/packagist/php/contributte/micro-skeleton"></a>
+  <a href="https://github.com/contributte/micro-skeleton"><img alt="License" src="https://badgen.net/github/license/contributte/micro-skeleton"></a>
+  <a href="https://bit.ly/ctteg"><img alt="Gitter support" src="https://badgen.net/badge/support/gitter/cyan"></a>
+  <a href="https://bit.ly/cttfo"><img alt="Forum support" src="https://badgen.net/badge/support/forum/yellow"></a>
+  <a href="https://contributte.org/partners.html"><img alt="Sponsor Contributte" src="https://badgen.net/badge/sponsor/donations/F96854"></a>
 </p>
 
 <p align=center>
@@ -19,32 +21,28 @@ Website 🚀 <a href="https://contributte.org">contributte.org</a> | Contact �
 </p>
 
 <p align=center>
-	<img src="https://api.microlink.io?url=https%3A%2F%2Fexamples.contributte.org%2Fmicro-skeleton%2F&overlay.browser=light&screenshot=true&meta=false&embed=screenshot.url"></img>
+	<img alt="Micro Skeleton demo" src="https://api.microlink.io?url=https%3A%2F%2Fexamples.contributte.org%2Fmicro-skeleton%2F&overlay.browser=light&screenshot=true&meta=false&embed=screenshot.url"></img>
 </p>
 
 -----
 
 ## Goal
 
-Main goal is to provide micro starter-kit project for Nette developers.
+This is a small Nette starter kit for prototypes and simple websites.
 
 ## Demo
 
 https://examples.contributte.org/micro-skeleton/
 
-## Installation
+## Website quick start
 
 You will need `PHP 8.4+` and [Composer](https://getcomposer.org/).
 
 ```bash
 composer create-project -s dev contributte/micro-skeleton acme
 cd acme
-make project
+make setup
 ```
-
-## Startup
-
-Start the development server:
 
 ```bash
 make dev
@@ -52,14 +50,15 @@ make dev
 
 Open [http://localhost:8000](http://localhost:8000). The default route renders templates from `app/templates`; paths without a matching template render the bundled 404 page.
 
-## Commands
+## Development commands
 
 ```bash
-make qa       # coding standard and static analysis
 make cs       # coding standard only
 make csf      # fix coding style
 make clean    # remove temporary files and logs
 ```
+
+The `phpstan`, `tests`, and `coverage` Make targets are placeholders in this skeleton; they do not run checks yet.
 
 ## Configuration
 
@@ -72,7 +71,7 @@ See [how to contribute](https://contributte.org/contributing.html) to this packa
 This package is currently maintaining by these authors.
 
 <a href="https://github.com/f3l1x">
-    <img width="80" height="80" src="https://avatars2.githubusercontent.com/u/538058?v=3&s=80">
+    <img alt="Milan Šulc" width="80" height="80" src="https://avatars2.githubusercontent.com/u/538058?v=3&s=80">
 </a>
 
 -----
